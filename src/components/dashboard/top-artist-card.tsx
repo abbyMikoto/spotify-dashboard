@@ -1,10 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-import type { SpotifyUserProfile } from "@/lib/spotify/types";
-import LogoutButton from "../auth/logout-btn";
 import { SpotifyArtist } from "@/data/spotify-resp-types";
 import { Card, CardContent } from "../ui/card";
-import { Badge } from "../ui/badge";
 
 export default function TopArtistCard({ artist, index }: { artist: SpotifyArtist, index: number }) {
   const image = artist.images[0]?.url; 

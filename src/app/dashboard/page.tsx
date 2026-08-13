@@ -1,5 +1,6 @@
 
 import DashboardHeader from "@/components/dashboard/dashboard-header";
+import ListeningActivityAreaChart from "@/components/dashboard/listening-activity-areachart";
 import ListeningActivityChart from "@/components/dashboard/listening-activity-chart";
 import ListeningTimeEstimateCard from "@/components/dashboard/listening-time-estimate-card";
 import RecentlyPlayedArtistsCard from "@/components/dashboard/recently-played-artists-card";
@@ -42,6 +43,7 @@ export default async function DashboardPage({
       </div>
       <div className="mb-6">
         <ListeningActivityChart items={recentlyPlayed} />
+        <ListeningActivityAreaChart items={recentlyPlayed} />
       </div>
       <TopArtistsSection artists={topArtists} />
     </div>
