@@ -41,7 +41,7 @@ export default async function DashboardPage({
         <RecentlyPlayedArtistsCard recentlyPlayed={recentlyPlayed} />
         {/* <GenreDistributionChart artists={topArtists} className="lg:col-span-2" /> */}
       </div>
-      <div className="mb-6">
+      <div className="flex flex-col gap-6 mb-6">
         <ListeningActivityChart items={recentlyPlayed} />
         <ListeningActivityAreaChart items={recentlyPlayed} />
       </div>
